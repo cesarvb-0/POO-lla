@@ -83,7 +83,7 @@ def ejercicio2():
         opcion = int(input("Ingrese la opcion deseada: "))
         
         if opcion == 1:
-            nombreProducto = input("Ingrese el nombre del produco nuevo: ")
+            nombreProducto = input("Ingrese el nombre del producto nuevo: ")
             precioProducto = int(input("Ingrese el precio del producto nuevo: "))
             cantidadProducto = int(input("Ingrese la cantidad que registra: "))
             productoNuevo = productos(nombreProducto, precioProducto, cantidadProducto)
