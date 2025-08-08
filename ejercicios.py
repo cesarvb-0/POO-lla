@@ -123,7 +123,7 @@ def ejercicio2():
         else:
             print("Opción inválida. Intente nuevamente.")
 
-class Banco:
+class cuentas:
     def __init__(self, numeroCuenta, titular, saldo):
         self.numeroCuenta = numeroCuenta
         self.titular = titular
@@ -148,7 +148,7 @@ def ejercicio3():
     numero = input("Ingrese su número de cuenta: ")
     titular = input("Ingrese el nombre del titular: ")
     saldo_inicial = float(input("Ingrese el saldo inicial: "))
-    cuenta = Banco(numero, titular, saldo_inicial)
+    cuenta = cuentas(numero, titular, saldo_inicial)
 
     while True:
         print("\nSeleccione una opción:")
