@@ -37,7 +37,7 @@ class Bicicleta(Transporte):
         tiempo_entrega = distancia_km / velocidad
         return tiempo_entrega
     
-    def calcular_costo(distancia_km):
+    def calcular_costo(self, distancia_km):
         costo = self.costoBase + 0.20 * distancia_km
         return costo
     
@@ -49,7 +49,7 @@ class Moto(Transporte):
         tiempo_entrega = distancia_km / velocidad
         return tiempo_entrega
     
-    def calcular_costo(distancia_km, peso_kg):
+    def calcular_costo(self, distancia_km, peso_kg):
         costo = self.costoBase + 0.60 * distancia_km + 0.05 * peso_kg
         return costo
     
@@ -61,11 +61,10 @@ class Furgoneta(Transporte):
         tiempo_entrega = distancia_km / velocidad
         return tiempo_entrega
     
-    def calcular_costo(distancia_km, peso_kg):
+    def calcular_costo(self, distancia_km, peso_kg):
         costo = self.costoBase + 1.20 * distancia_km + 0.10 * peso_kg
         return costo
     
 class GestorDeEnvios:
     transportes_disponibles: list = field(default=["Bicicleta","Moto","Furgoneta","cualquiera","mas_barato"])
 
-    def a
